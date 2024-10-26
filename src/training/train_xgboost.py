@@ -13,6 +13,11 @@ data = pd.read_csv(PREPROCESSURL)
 # Check the data types to ensure 'Date' is a float
 print(data.dtypes)
 
+
+# Clean column names
+data.rename(columns={'Date    ': 'Date'}, inplace=True)
+data.columns = data.columns.str.strip()
+
 # Split the dataset into features and target
 X = data[['Date']]  # Use 'Date' as the feature
 y = data['Price']   # Use 'Price' as the target

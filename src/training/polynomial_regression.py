@@ -6,11 +6,17 @@ from sklearn.model_selection import learning_curve, train_test_split
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import make_pipeline
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import joblib
 
 # Load the dataset
 data = pd.read_csv(PREPROCESSURL)
+print(data.info())
+print(data.columns)
+
+# Clean column names
+data.rename(columns={'Date    ': 'Date'}, inplace=True)
+data.columns = data.columns.str.strip()
 
 # Split the dataset into features and target
 X = data[['Date']]  # Use 'Date' as the feature
@@ -39,9 +45,19 @@ test_mse = mean_squared_error(y_test, y_pred_test)
 train_r2 = r2_score(y_train, y_pred_train)
 test_r2 = r2_score(y_test, y_pred_test)
 
+# Additional metrics for model evaluation
+train_mae = mean_absolute_error(y_train, y_pred_train)
+test_mae = mean_absolute_error(y_test, y_pred_test)
+train_rmse = np.sqrt(train_mse)
+test_rmse = np.sqrt(test_mse)
+
 # Display results
 print(f'Polynomial Regression Mean Squared Error (Train): {train_mse:.2f}')
 print(f'Polynomial Regression Mean Squared Error (Test): {test_mse:.2f}')
+print(f'Polynomial Regression Mean Absolute Error (Train): {train_mae:.2f}')
+print(f'Polynomial Regression Mean Absolute Error (Test): {test_mae:.2f}')
+print(f'Polynomial Regression Root Mean Squared Error (Train): {train_rmse:.2f}')
+print(f'Polynomial Regression Root Mean Squared Error (Test): {test_rmse:.2f}')
 print(f'Polynomial Regression R^2 Score (Train): {train_r2:.2f}')
 print(f'Polynomial Regression R^2 Score (Test): {test_r2:.2f}')
 print(f"Model Accuracy (R² Score on Test Set): {test_r2:.2f} or {test_r2 * 100:.2f}%")
