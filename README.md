@@ -42,10 +42,12 @@ The model development process involved selecting and implementing various regres
 ## Model Evaluation
 
 The following table shows the evaluation metrics for the classification models trained on the Average Gold Prices Dataset:
-| Model Name            | Model File                                                        | Accuracy | 
-| :-------------------- | :---------------------------------------------------------------- | :------- | 
-| XGBoost               | xgboost.py (/src/training/xgboost.py)                             | 0.99     |   
-| Polynomial Regression | polynomial_regression.py (/src/training/polynomial_regression.py) | 0.88     | 
+| Model Name            | Model File                                                        | Accuracy |
+| :-------------------- | :---------------------------------------------------------------- | :------- |
+| XGBoost               | xgboost.py (/src/training/xgboost.py)                             | 0.99     |
+| Polynomial Regression | polynomial_regression.py (/src/training/polynomial_regression.py) | 0.88     |
+| Random Forest Model   | rf_model.py (/src/training/rf_model.py)                           | 0.99     |
+| LSTM                  | lstm.py (/src/training/lstm.py)                                   | 0.99     |
 
 ## Conclusion
 
