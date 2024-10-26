@@ -39,7 +39,11 @@ The following scatter plot displays the relationship between the date (in YYYY.M
 
 ## Model Evaluation
 
-(model_evaluation) - [text form] This will be a brief description of the model evaluation process that you have taken to evaluate the model's performance for the project.
+The following table shows the evaluation metrics for the classification models trained on the Average Gold Prices Dataset:
+| Model Name            | Model File                                                        | Accuracy | Precision | Recall | F1 Score |
+| :-------------------- | :---------------------------------------------------------------- | :------- | :-------- | :----- | :------- |
+| XGBoost               | xgboost.py (/src/training/xgboost.py)                             | 0.99     | 0.99      | 0.99   | 0.99     |
+| Polynomial Regression | polynomial_regression.py (/src/training/polynomial_regression.py) | 0.88     | 0.88      | 0.88   | 0.88     |
 
 ## Conclusion
 

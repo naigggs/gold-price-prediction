@@ -13,7 +13,6 @@ data = pd.read_csv(PREPROCESSURL)
 # Check the data types to ensure 'Date' is a float
 print(data.dtypes)
 
-
 # Clean column names
 data.rename(columns={'Date    ': 'Date'}, inplace=True)
 data.columns = data.columns.str.strip()
