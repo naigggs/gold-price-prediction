@@ -23,7 +23,7 @@ In the data preprocessing phase, the primary step involved converting the data t
 
 The dataset used for this analysis can be found at the following URL: [Gold Prices Dataset](https://datahub.io/core/gold-prices). This source provides comprehensive information on historical gold prices, allowing for a thorough examination of trends, fluctuations, and the overall behavior of gold prices over time.
 
-### Visualization
+## Visualization
 
 ### Date (YYYY-MM) vs Average Price of Gold per Troy Ounce in USD
 
