@@ -37,7 +37,7 @@ The following scatter plot displays the relationship between the date (in YYYY.M
 
 ## Model Development
 
-(model_development) - [text form] This will be a brief description of the model development process that you have taken to create the model for the project.
+The model development process involved selecting and implementing various regression techniques to predict the average price of gold. Polynomial Regression, and XGBoost Regression were chosen due to their effectiveness in time series forecasting and capturing complex patterns. Each model was trained on the preprocessed dataset, with the "Date" feature (in YYYY.MM format) as the independent variable and the average gold price as the target variable. Hyperparameter tuning and cross-validation were used to optimize model performance, and results were compared to determine the best-performing model for accurate gold price prediction.
 
 ## Model Evaluation
 
