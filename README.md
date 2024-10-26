@@ -1,6 +1,6 @@
 # Gold Average Price Prediction
 
-The project aims to predict average gold prices over the years using various data science techniques, specifically focusing on Linear Regression, Polynomial Regression, and XGBoost Regression. By analyzing historical gold price data and identifying trends, the project seeks to provide accurate forecasts that can aid investors and analysts in making informed decisions in the commodities market. The use of different regression methods allows for a comprehensive comparison of performance and accuracy in price prediction.
+The project aims to predict average gold prices over the years using various data science techniques, specifically focusing on Polynomial Regression, LSTM, Random Forest Regressor and XGBoost Regression. By analyzing historical gold price data and identifying trends, the project seeks to provide accurate forecasts that can aid investors and analysts in making informed decisions in the commodities market. The use of different regression methods allows for a comprehensive comparison of performance and accuracy in price prediction.
 
 ## Dataset Description
 
@@ -52,7 +52,5 @@ The following table shows the evaluation metrics for the classification models t
 ## Conclusion
 
 This project successfully demonstrates that various regression models can effectively predict the average price of gold, a commodity with a longstanding upward trend. By analyzing historical data, we can better understand how external factors—like economic crises and inflationary periods—have influenced gold prices. Among the models tested, XGBoost and Random Forest provided high predictive accuracy, emphasizing the robustness of ensemble methods in capturing both trends and fluctuations and the Long Short-Term Memory (LSTM) model further highlighted the strength of deep learning approaches for time series forecasting, as it captures sequential dependencies, making it suitable for complex patterns in long-term data. The Polynomial Regression model, while useful in recognizing long-term trends, was less effective in adapting to short-term volatility. These results underscore the importance of selecting models that balance trend identification with the flexibility to address volatile periods, making this analysis valuable for forecasting gold prices.
-
-
 
 ## Contributors
