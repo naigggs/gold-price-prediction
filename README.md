@@ -15,6 +15,8 @@ The following table shows a snapshot of the dataset used in this project:
 
 The analysis reveals that the average price of gold per troy ounce has been steadily increasing over the years. This upward trend highlights the growing value of gold as a commodity, reflecting various economic factors and market dynamics influencing its price.
 
+The data supports a solid, long-term increasing trend for gold prices. This is consistent with gold's position as a safety investment, since major price increases occur in reaction to global economic crises and periods of inflation (1970-1980 energy crisis, 2008 financial crisis, 2020 COVID pandemic), and prices declines slightly as the economy stabilizes. 
+
 ## Data Preprocessing
 
 In the data preprocessing phase, the primary step involved converting the data type of the "Date" column from an object to a float. This transformation reformatted the date from the YYYY-MM format to a more suitable YYYY.MM format. This adjustment ensures that the dates are in a numerical format, facilitating easier manipulation and analysis during the modeling process.
@@ -31,7 +33,7 @@ The following scatter plot displays the relationship between the date (in YYYY.M
 
 ![image](https://github.com/user-attachments/assets/2cb477f9-fba0-4620-96ff-88b4e26424e8)
 
-> It is clear that the average price of gold per troy ounce in USD has been on the rise over the years. While there are periods when it declines, the overall trend remains upward.
+> The plot shows a none to minimal jumps in price of gold from the year 1833 up to around 1973 where the prices reached more than 100, correlating to the 1970-1980 energy crisis, from the 1980's up to the 2000's the price starts to fluctuate, even showing a decline, until the 2008 financial crisis happened where the price of gold shot up to the thousands, another increase in price happened in 2020's due to the COVID Pandemic. 
 
 ## Model Development
 
@@ -40,10 +42,10 @@ The following scatter plot displays the relationship between the date (in YYYY.M
 ## Model Evaluation
 
 The following table shows the evaluation metrics for the classification models trained on the Average Gold Prices Dataset:
-| Model Name            | Model File                                                        | Accuracy | Precision | Recall | F1 Score |
-| :-------------------- | :---------------------------------------------------------------- | :------- | :-------- | :----- | :------- |
-| XGBoost               | xgboost.py (/src/training/xgboost.py)                             | 0.99     | 0.99      | 0.99   | 0.99     |
-| Polynomial Regression | polynomial_regression.py (/src/training/polynomial_regression.py) | 0.88     | 0.88      | 0.88   | 0.88     |
+| Model Name            | Model File                                                        | Accuracy | 
+| :-------------------- | :---------------------------------------------------------------- | :------- | 
+| XGBoost               | xgboost.py (/src/training/xgboost.py)                             | 0.99     |   
+| Polynomial Regression | polynomial_regression.py (/src/training/polynomial_regression.py) | 0.88     | 
 
 ## Conclusion
 

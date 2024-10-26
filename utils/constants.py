@@ -1,3 +1,6 @@
 DATASETURL = "datasets/monthly.csv"
 PREPROCESSURL = "datasets/preprocess.csv"
-MODEL = "models/poly.pkl"
+POLY = "models/poly.pkl"
+XGBOOST = "models/xgboost_model.pkl"
+MODEL3 = "models/poly.pkl"
+MODEL4 = "models/poly.pkl"
